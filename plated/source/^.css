@@ -10,4 +10,5 @@ a		{color:#1400ff;}
 .gist_wrap			{width:960px; margin:0 auto; padding:20px 40px;}
 .gist .gist-file	{border:0 !important;}
 .gist .gist-data	{padding-bottom:20px !important;}
+iframe				{height:100%;}
 
