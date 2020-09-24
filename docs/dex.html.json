@@ -1,6 +1,6 @@
 {
  "_dirname": "{_root}",
- "_filename": "{_root}data.html",
+ "_filename": "{_root}dex.html",
  "_flags": {
   "body": {
    "trim": "ends"
@@ -44,10 +44,10 @@
   }
  },
  "_output_chunkname": "html",
- "_output_filename": "data.html",
+ "_output_filename": "dex.html",
  "_root": "./",
  "_site": "{_root}",
- "_sourcename": "data.^.html",
+ "_sourcename": "dex.^.html",
  "body": "<div class=\"gist_wrap no_git\">\n\t{body_text}\n\t<div class=\"ps\">\n\t\t{ps_text}\n\t</div>\n\t{src_text}\n</div>\n\n<div class=\"iframe_wrap\">\n\t<iframe width=\"1024\" height=\"612\" src=\"https://app.powerbi.com/view?r=eyJrIjoiMTVkZjhhMWMtYTliMS00ZjQ4LTliY2QtMWRmNTg0ZjJhMGUxIiwidCI6IjQ2MjI3OWM0LWZjODMtNGRlNi1hODgxLTkwMTFlNWI4YTlmYSJ9&pageName=ReportSection\" frameborder=\"0\" allowFullScreen=\"true\"></iframe>\n</div>\n\n<div class=\"gist_wrap\">\n\t<script src=\"https://utteranc.es/client.js\"\n\t\t\trepo=\"notshi/notshi.github.io\"\n\t\t\tissue-term=\"url\"\n\t\t\ttheme=\"github-light\"\n\t\t\tcrossorigin=\"anonymous\"\n\t\t\tasync>\n\t</script>\n</div>",
  "body_text": "<p>We were recently asked about using d-portal data as an external database in Power Bi.</p>\n<p>I&#39;ve not come across Power Bi so had to do some amount of researching. There is a web app you could download on your browser which is great as I&#39;m on a Linux machine so I began installing it on Firefox. Almost immediately, it became apparent that it was not going to be a seamless experience - you needed a company email to register so a gmail account will not suffice and you needed to pay for a Pro License to be able to use the app in any useful manner. Thankfully there was a free trial for 60 days and since I just needed to see if the d-portal link would work, it seemed an ok compromise to go with.</p>\n<p>The user interface is vast - it looks like you could do many things on the Power Bi app - you just needed to not be overwhelmed by the options.</p>\n<p>After a few frustrating tries, it became obvious that I was not able to use a non-Microsoft external database on the app but I could do this on the Desktop version instead. I booted up my non-work Windows machine and began the installation.</p>\n<p>Power Bi Desktop is free and its user interface feels a lot more intuitive than the web app. Having read through some forums of the right way to use an external link to a database, I was able to get live d-portal data to show up as tables on Power Bi desktop.</p>\n<ol>\n<li>Go to <strong>File</strong> &gt; <strong>Get data</strong> &gt; <strong>Web</strong></li>\n<li>Paste the d-portal link and click <strong>OK</strong></li>\n<li>Click <strong>Load</strong></li>\n</ol>\n<p>The application chugs away for a while and before you know it, it loads up as a clickable database on the page. You&#39;d then have to pick a visualisation (pie chart, stacked column, scatter plots; etc) and then choose the data fields you want to populate the graph. In less than 5 minutes, I had a nice, interactive graph showing IATI COVID-19 data in Afghanistan using a d-portal csv query.</p>\n<p>The next bit was to be able to share this somehow - and this is when it gets a little bit complicated.</p>\n<p>First, you had to publish it to a workspace on he Power Bi web app. Then you had to have the right administrative rights to be able to publish that report to the web, publicly. Otherwise, you would have to log in as a Power Bi user to be able to view it!</p>\n<p>Next, I had to add a TXT record to my dns as proof that I owned the domain and email I signed up to Power Bi with and then I had to allow &#39;publish to web&#39; in the admin portal of Power Bi via a series of portals and a series of other portals, all Microsoft-alike.</p>\n<p>And this is what you see at the bottom of this post - a live d-portal csv query for IATI Covid-19 Afghanistan data, displayed as an embedded Power BI report.</p>\n",
  "bodywrap": "{crumb_wrap}<div class=\"main\">{body}</div>",
