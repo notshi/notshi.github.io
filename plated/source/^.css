@@ -17,6 +17,9 @@ img		{max-width:416px;}
 .gist_wrap			{width:960px; margin:0 auto; padding:20px 40px;}
 .gist_wrap li		{list-style-position:inside; margin-left:3em;}
 .gist .gist-data	{padding:20px !important;}
+.gist .gist-meta {
+    display: none;
+}
 .gist .markdown-body li > p	{margin-bottom:0.25em;}
 .gist .markdown-body li 	{margin-left:0.5em; list-style-position:initial;}
 
@@ -32,8 +35,14 @@ only screen and (-o-min-device-pixel-ratio: 3/2),
 only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
 
-*			{width:100%; height:auto; min-height:1px; max-height:999999px;}
-body		{font-size:3rem; padding:30px 50px;}
-.gist_wrap li	{list-style-position:inside; margin-left:initial;}
-
+*		{width:100%; height:auto; min-height:1px; max-height:999999px;}
+body	{font-size:3rem; padding:30px 50px;}
+.gist_wrap li			{list-style-position:inside; margin-left:0;}
+.gist .gist-file		{margin-bottom:10em !important;}
+.gist .markdown-body	{font-size:3rem !important;}
+.gist .markdown-body h2	{margin-top:2em !important;}
+.gist .markdown-body ol,
+.gist .markdown-body ul {padding-left:0.5em !important;}
+.gist .markdown-body p	{margin:1em !important;}
+.gist .markdown-body li > p	{margin-bottom:0.25em !important;}
 }
