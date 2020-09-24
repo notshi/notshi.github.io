@@ -1,0 +1,52 @@
+<html>
+<head><title>Dquery</title>
+<style>
+
+/*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,embed,iframe,object,audio,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}
+
+body	{background:#fff; font-family:monospace, sans-serif; font-size:16px; line-height:1.5em; color:#444; width:100%; padding:50px;}
+h1		{font-size:4em; font-weight:normal; color:#1400ff;}
+h2		{font-size:2em; font-weight:normal;}
+a		{color:#1400ff; text-decoration:none;}
+p		{margin:1.5em;}
+img		{max-width:416px;}
+
+.crumb-wrap			{margin:0px auto; width:960px; padding:20px 40px; text-align:right;}
+.crumb-slash		{margin:0px 20px 0px 20px;}
+
+.gist_wrap			{width:960px; margin:0 auto; padding:20px 40px;}
+.gist_wrap li		{list-style-position:inside; margin-left:3em;}
+.gist .gist-data	{padding:20px !important;}
+.gist .markdown-body li > p	{margin-bottom:0.25em;}
+.gist .markdown-body li 	{margin-left:0.5em; list-style-position:initial;}
+
+.iframe_wrap		{margin:0 auto; margin-left:150px; width:1024px;}
+iframe				{height:612px;}
+
+</style></head>
+<body><div class="crumb-wrap"><a class="crumb" href="./">&#127828;</a><span class="crumb-slash">/</span><a class="crumb" href="./dquery">dquery</a></div><div class="main"><div class="gist_wrap">
+	<p>Every now and then, we get requests for really complex data queries on d-portal.</p>
+<p>There is a mild API running the site and this has served us well but data needs have changed, including our understanding of them and the IATI standard.</p>
+<p>We&#39;ve spent some considerable amount of time iterating on the architecture of the database so that future queries like these are made easier and more efficient.</p>
+<p>One of the main things we did was flatten &quot;full&quot; IATI data.</p>
+<p>The idea is to have something that can be expressed as a handful of tables and then be converted back to IATI schema-validated XML.</p>
+<p>And so, we now have a full queryable IATI data backend and have created <strong>dquery</strong>, a read only SQL interface to the full database.</p>
+<p>We will need time to work on the user interface and documentation but until then, below are some queries you can use. With some minor tweaks, you should be able to adapt the query to the elements and data fields you need.</p>
+<p>Otherwise, do let me know in the comments below.</p>
+
+</div>
+
+<div class="gist_wrap">
+	<script src="https://gist.github.com/notshi/6db6a8f60a71b29c5561e516f6992294.js"></script>
+</div>
+
+<div class="gist_wrap">
+	<script src="https://utteranc.es/client.js"
+			repo="notshi/notshi.github.io"
+			issue-term="url"
+			theme="github-light"
+			crossorigin="anonymous"
+			async>
+	</script>
+</div></div></body>
+</html>

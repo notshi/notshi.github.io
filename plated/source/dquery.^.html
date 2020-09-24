@@ -1,0 +1,47 @@
+
+#^------------------------------
+#^title trim=ends
+
+Dquery
+
+#^crumb_trap trim=ends same=append
+{crumb_slash}<a class="crumb" href="{_root}dquery">dquery</a>
+
+#^------------------------------
+#^body trim=ends
+
+<div class="gist_wrap">
+	{body_text}
+</div>
+
+<div class="gist_wrap">
+	<script src="https://gist.github.com/notshi/6db6a8f60a71b29c5561e516f6992294.js"></script>
+</div>
+
+<div class="gist_wrap">
+	<script src="https://utteranc.es/client.js"
+			repo="notshi/notshi.github.io"
+			issue-term="url"
+			theme="github-light"
+			crossorigin="anonymous"
+			async>
+	</script>
+</div>
+
+
+#^body_text trim=ends form=markdown
+Every now and then, we get requests for really complex data queries on d-portal.
+
+There is a mild API running the site and this has served us well but data needs have changed, including our understanding of them and the IATI standard.
+
+We've spent some considerable amount of time iterating on the architecture of the database so that future queries like these are made easier and more efficient.
+
+One of the main things we did was flatten "full" IATI data.
+
+The idea is to have something that can be expressed as a handful of tables and then be converted back to IATI schema-validated XML.
+
+And so, we now have a full queryable IATI data backend and have created **dquery**, a read only SQL interface to the full database.
+
+We will need time to work on the user interface and documentation but until then, below are some queries you can use. With some minor tweaks, you should be able to adapt the query to the elements and data fields you need.
+
+Otherwise, do let me know in the comments below.
