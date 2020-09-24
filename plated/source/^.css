@@ -2,13 +2,20 @@
 
 /*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,embed,iframe,object,audio,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}
 
-body	{background:#fff; font-family:monospace, sans-serif; font-size:16px; line-height:24px; color:#444; width:100%; padding:50px;}
+body	{background:#fff; font-family:monospace, sans-serif; font-size:16px; line-height:1.5em; color:#444; width:100%; padding:50px;}
 h1		{font-size:4em; font-weight:normal; color:#1400ff;}
 h2		{font-size:2em; font-weight:normal;}
-a		{color:#1400ff;}
+a		{color:#1400ff; text-decoration:none;}
+p		{margin:1.5em;}
+
+.crumb-wrap			{margin:0px auto; width:960px; padding:20px 40px; text-align:right;}
+.crumb-slash		{margin:0px 20px 0px 20px;}
 
 .gist_wrap			{width:960px; margin:0 auto; padding:20px 40px;}
-.gist .gist-file	{border:0 !important;}
-.gist .gist-data	{padding-bottom:20px !important;}
-iframe				{height:100%;}
+.gist_wrap li		{list-style-position:inside; margin-left:3em;}
+.gist .gist-data	{padding:20px !important;}
+.gist .markdown-body li > p	{margin-bottom:0.25em;}
+.gist .markdown-body li 	{margin-left:0.5em; list-style-position:initial;}
 
+.iframe_wrap		{margin:0 auto; margin-left:150px; width:1024px;}
+iframe				{height:612px;}

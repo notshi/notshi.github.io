@@ -4,9 +4,12 @@
 
 <html>
 <head>{head}</head>
-<body>{body}</body>
+<body>{bodywrap}</body>
 </html>
 
+#^bodywrap trim=ends
+
+{crumb_wrap}<div class="main">{body}</div>
 
 #^------------------------------
 #^head trim=ends
@@ -25,3 +28,22 @@ Title is missing.
 #^body trim=ends
 
 Body is missing.
+
+
+#^------------------------------
+
+Crumbs
+
+#^crumb_wrap trim=ends
+
+<div class="crumb-wrap">{crumb_trap}</div>
+
+#^crumb_slash trim=ends
+
+<span class="crumb-slash">/</span>
+
+#^crumb_trap trim=ends same=append
+
+<a class="crumb" href="{_root}">&#127828;</a>
+
+

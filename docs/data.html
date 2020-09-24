@@ -4,21 +4,61 @@
 
 /*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,embed,iframe,object,audio,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}
 
-body	{background:#fff; font-family:monospace, sans-serif; font-size:16px; line-height:24px; color:#444; width:100%; padding:50px;}
+body	{background:#fff; font-family:monospace, sans-serif; font-size:16px; line-height:1.5em; color:#444; width:100%; padding:50px;}
 h1		{font-size:4em; font-weight:normal; color:#1400ff;}
 h2		{font-size:2em; font-weight:normal;}
-a		{color:#1400ff;}
+a		{color:#1400ff; text-decoration:none;}
+p		{margin:1.5em;}
+
+.crumb-wrap			{margin:0px auto; width:960px; padding:20px 40px; text-align:right;}
+.crumb-slash		{margin:0px 20px 0px 20px;}
 
 .gist_wrap			{width:960px; margin:0 auto; padding:20px 40px;}
-.gist .gist-file	{border:0 !important;}
-.gist .gist-data	{padding-bottom:20px !important;}
-iframe				{height:100%;}
+.gist_wrap li		{list-style-position:inside; margin-left:3em;}
+.gist .gist-data	{padding:20px !important;}
+.gist .markdown-body li > p	{margin-bottom:0.25em;}
+.gist .markdown-body li 	{margin-left:0.5em; list-style-position:initial;}
 
+.iframe_wrap		{margin:0 auto; margin-left:150px; width:1024px;}
+iframe				{height:612px;}
 
 </style></head>
-<body><iframe width="1024" height="804" src="https://app.powerbi.com/view?r=eyJrIjoiMTVkZjhhMWMtYTliMS00ZjQ4LTliY2QtMWRmNTg0ZjJhMGUxIiwidCI6IjQ2MjI3OWM0LWZjODMtNGRlNi1hODgxLTkwMTFlNWI4YTlmYSJ9" frameborder="0" allowFullScreen="true"></iframe>
+<body><div class="crumb-wrap"><a class="crumb" href="./">&#127828;</a><span class="crumb-slash">/</span><a class="crumb" href="./data">data</a></div><div class="main"><div class="gist_wrap no_git">
+	<p>We were recently asked about using d-portal data as an external database in Power Bi.</p>
+<p>I&#39;ve not come across Power Bi so had to do some amount of researching. There is a web app you could download on your browser which is great as I&#39;m on a Linux machine so I began installing it on Firefox. Almost immediately, it became apparent that it was not going to be a seamless experience - you needed a company email to register so a gmail account will not suffice and you needed to pay for a Pro License to be able to use the app in any useful manner. Thankfully there was a free trial for 60 days and since I just needed to see if the d-portal link would work, it seemed an ok compromise to go with.</p>
+<p>The user interface is vast - it looks like you could do many things on the Power Bi app - you just needed to not be overwhelmed by the options.</p>
+<p>After a few frustrating tries, it became obvious that I was not able to use a non-Microsoft external database on the app but I could do this on the Desktop version instead. I booted up my non-work Windows machine and began the installation.</p>
+<p>Power Bi Desktop is free and its user interface feels a lot more intuitive than the web app. Having read through some forums of the right way to use an external link to a database, I was able to get live d-portal data to show up as tables on Power Bi desktop.</p>
+<ol>
+<li>Go to <strong>File</strong> &gt; <strong>Get data</strong> &gt; <strong>Web</strong></li>
+<li>Paste the d-portal link and click <strong>OK</strong></li>
+<li>Click <strong>Load</strong></li>
+</ol>
+<p>The application chugs away for a while and before you know it, it loads up as a clickable database on the page. You&#39;d then have to pick a visualisation (pie chart, stacked column, scatter plots; etc) and then choose the data fields you want to populate the graph. In less than 5 minutes, I had a nice, interactive graph showing IATI COVID-19 data in Afghanistan using a d-portal csv query.</p>
+<p>The next bit was to be able to share this somehow - and this is when it gets a little bit complicated.</p>
+<p>First, you had to publish it to a workspace on he Power Bi web app. Then you had to have the right administrative rights to be able to publish that report to the web, publicly. Otherwise, you would have to log in as a Power Bi user to be able to view it!</p>
+<p>Next, I had to add a TXT record to my dns as proof that I owned the domain and email I signed up to Power Bi with and then I had to allow &#39;publish to web&#39; in the admin portal of Power Bi via a series of portals and a series of other portals, all Microsoft-alike.</p>
+<p>And this is what you see at the bottom of this post - a live d-portal csv query for IATI Covid-19 Afghanistan data, displayed as an embedded Power BI report.</p>
 
-<p>This is a live d-portal csv query for IATI Covid-19 data, displayed as an embedded Power BI report.</p>
-<p><a href="https://github.com/devinit/D-Portal/issues/589">Source</a>, 23 September 2020</p>
-</body>
+	<div class="ps">
+		<p>I don&#39;t know what will happen after the 60 days trial. This report could disappear and all access to getting anything online could be taken away. We will have to wait and see.</p>
+
+	</div>
+	<p><a href="https://github.com/devinit/D-Portal/issues/589">Source</a>, 23 September 2020.</p>
+
+</div>
+
+<div class="iframe_wrap">
+	<iframe width="1024" height="612" src="https://app.powerbi.com/view?r=eyJrIjoiMTVkZjhhMWMtYTliMS00ZjQ4LTliY2QtMWRmNTg0ZjJhMGUxIiwidCI6IjQ2MjI3OWM0LWZjODMtNGRlNi1hODgxLTkwMTFlNWI4YTlmYSJ9&pageName=ReportSection" frameborder="0" allowFullScreen="true"></iframe>
+</div>
+
+<div class="gist_wrap">
+	<script src="https://utteranc.es/client.js"
+			repo="notshi/notshi.github.io"
+			issue-term="url"
+			theme="github-light"
+			crossorigin="anonymous"
+			async>
+	</script>
+</div></div></body>
 </html>
