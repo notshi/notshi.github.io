@@ -1,12 +1,8 @@
 {
- "_dirname": "{_root}",
- "_filename": "{_root}agro.html",
+ "_dirname": "{_root}data",
+ "_filename": "{_root}data",
  "_flags": {
   "body": {
-   "trim": "ends"
-  },
-  "body_text": {
-   "form": "markdown",
    "trim": "ends"
   },
   "bodywrap": {
@@ -35,19 +31,17 @@
    "trim": "ends"
   }
  },
- "_output_chunkname": "html",
- "_output_filename": "agro.html",
- "_root": "./",
+ "_output_filename": "data/",
+ "_root": "../",
  "_site": "{_root}",
- "_sourcename": "agro.^.html",
- "body": "<div class=\"gist_wrap\">\n\t{body_text}\n</div>\n\n<div class=\"gist_wrap\">\n\t<script src=\"https://gist.github.com/notshi/272990506e4fae8558aaaf73bcf0ba8f.js\"></script>\n</div>\n\n<div class=\"gist_wrap\">\n\t<script src=\"https://utteranc.es/client.js\"\n\t\t\trepo=\"notshi/notshi.github.io\"\n\t\t\tissue-term=\"url\"\n\t\t\ttheme=\"github-light\"\n\t\t\tcrossorigin=\"anonymous\"\n\t\t\tasync>\n\t</script>\n</div>",
- "body_text": "<p>In the following posts, I attempt to find data outlined in the linked papers below by listing the processes and going through them carefully.</p>\n<p>If you find anything out of place, please comment below.</p>\n<p>It&#39;s a learning curve to understand how data is used and applied in different sectors and I&#39;m not at all familiar with Agroecology.</p>\n<p>As mentioned in the paper by <em>Pimbert and Moeller</em>, there is no sector code or identification in IATI for an activity that &#39;promotes agroecology&#39; and this, in turn, makes it more difficult to filter out activities that do fit the base requirement for any further analysis.</p>\n",
+ "_sourcename": "data/.",
+ "body": "Body is missing.",
  "bodywrap": "{crumb_wrap}<div class=\"main\">{body}</div>",
  "crumb_slash": "<span class=\"crumb-slash\">/</span>",
- "crumb_trap": "<a class=\"crumb\" href=\"{_root}\">&#127828;</a>{crumb_slash}<a class=\"crumb\" href=\"{_root}agro\">agro</a>",
+ "crumb_trap": "<a class=\"crumb\" href=\"{_root}\">&#127828;</a>",
  "crumb_wrap": "<div class=\"crumb-wrap\">{crumb_trap}</div>",
  "css": "\n/*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,embed,iframe,object,audio,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}\n\nbody\t{background:#fff; font-family:monospace, sans-serif; font-size:16px; line-height:1.5em; color:#444; width:100%; padding:50px;}\nh1\t\t{font-size:4em; font-weight:normal; color:#1400ff;}\nh2\t\t{font-size:2em; font-weight:normal;}\na\t\t{color:#1400ff; text-decoration:none;}\np\t\t{margin:1.5em;}\nimg\t\t{max-width:416px;}\n\n.crumb-wrap\t\t\t{margin:0px auto; width:960px; padding:20px 40px; text-align:right;}\n.crumb-slash\t\t{margin:0px 20px 0px 20px;}\n\n.gist_wrap\t\t\t{width:960px; margin:0 auto; padding:20px 40px;}\n.gist_wrap li\t\t{list-style-position:inside; margin-left:3em;}\n.gist .gist-data\t{padding:20px !important;}\n.gist .markdown-body li > p\t{margin-bottom:0.25em;}\n.gist .markdown-body li \t{margin-left:0.5em; list-style-position:initial;}\n\n.iframe_wrap\t\t{margin:0 auto; margin-left:150px; width:1024px;}\niframe\t\t\t\t{height:612px;}\n",
  "head": "<title>{title}</title>\n<style>\n{css}\n</style>",
  "html": "<html>\n<head>{head}</head>\n<body>{bodywrap}</body>\n</html>",
- "title": "Agroecology"
+ "title": "Title is missing."
 }
