@@ -40,8 +40,11 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 *		{width:100%; height:auto; min-height:1px; max-height:999999px;}
 body	{font-size:3rem; padding:30px 50px;}
-.gist .gist-data		{overflow:initial !important;}
+
+.gist_wrap.mob img		{max-width:100%;}
 .gist_wrap li			{list-style-position:inside; margin-left:0;}
+
+.gist .gist-data		{overflow:initial !important;}
 .gist .gist-file		{margin-bottom:10em !important;}
 .gist .markdown-body	{font-size:3rem !important;}
 .gist .markdown-body h2	{margin-top:2em !important;}

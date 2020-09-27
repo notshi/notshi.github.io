@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Title</title>
+  <id>/blog/inkscape/feed.xml</id>
+  <updated>2020-09-27T00:00:00.000Z</updated>
+  <link rel="self" type="application/atom+xml" href="/blog/inkscape/feed.xml"/>
+  <link rel="alternate" type="application/json" href="/blog/inkscape/feed.json"/>
+  <link rel="alternate" type="text/html" href="/"/>
+  <generator uri="https://github.com/bcomnes/jsonfeed-to-atom#readme" version="1.2.2">jsonfeed-to-atom</generator>
+  <entry>
+    <id>/blog/2020-09-27-font-weight-issues-in-inkscape</id>
+    <title>Font weight issues in Inkscape</title>
+    <updated>2020-09-27T00:00:00.000Z</updated>
+    <published>2020-09-27T00:00:00.000Z</published>
+    <content type="html"><![CDATA[
+<!--
+<div><a href="/">XIXs</a>/<a href="/blog/">Blog</a>/<a href="/blog/2020-09-27-font-weight-issues-in-inkscape">2020-09-27 Font weight issues in Inkscape </a></div>
+-->
+<a class="bloglink" href="/blog/2020-09-27-font-weight-issues-in-inkscape"><div class="bloglink-date">2020-09-27</div><img class="bloglink-icon" src="/blog/2020-09-27-font-weight-issues-in-inkscape/icon.jpg"/><div class="bloglink-title">Font weight issues in Inkscape</div></a>
+]]></content>
+    <link rel="alternate" href="/blog/2020-09-27-font-weight-issues-in-inkscape"/>
+    <category term="inkscape"/>
+  </entry>
+</feed>

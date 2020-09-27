@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Title</title>
+  <id>/blog/riso/feed.xml</id>
+  <updated>2020-09-27T00:00:00.000Z</updated>
+  <link rel="self" type="application/atom+xml" href="/blog/riso/feed.xml"/>
+  <link rel="alternate" type="application/json" href="/blog/riso/feed.json"/>
+  <link rel="alternate" type="text/html" href="/"/>
+  <generator uri="https://github.com/bcomnes/jsonfeed-to-atom#readme" version="1.2.2">jsonfeed-to-atom</generator>
+  <entry>
+    <id>/blog/2020-09-27-cyclus</id>
+    <title>Cyclus</title>
+    <updated>2020-09-27T00:00:00.000Z</updated>
+    <published>2020-09-27T00:00:00.000Z</published>
+    <content type="html"><![CDATA[
+<!--
+<div><a href="/">XIXs</a>/<a href="/blog/">Blog</a>/<a href="/blog/2020-09-27-cyclus">2020-09-27 Cyclus </a></div>
+-->
+<a class="bloglink" href="/blog/2020-09-27-cyclus"><div class="bloglink-date">2020-09-27</div><img class="bloglink-icon" src="/blog/2020-09-27-cyclus/icon.jpg"/><div class="bloglink-title">Cyclus</div></a>
+]]></content>
+    <link rel="alternate" href="/blog/2020-09-27-cyclus"/>
+    <category term="riso"/>
+  </entry>
+</feed>
