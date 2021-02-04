@@ -26,8 +26,8 @@ img		{max-width:416px;}
 .gist .markdown-body li > p	{margin-bottom:0.25em;}
 .gist .markdown-body li 	{margin-left:0.5em; list-style-position:initial;}
 
-.iframe_wrap		{margin:0 auto; width:1024px; padding-bottom:40px;}
-iframe				{height:612px;}
+.iframe_wrap		{margin:0 auto; width:1024px; padding-bottom:40px; text-align:center;}
+iframe				{height:569px;}
 
 
 /*	PHONES & STUFF
