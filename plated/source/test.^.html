@@ -1,0 +1,33 @@
+
+#^------------------------------
+#^title trim=ends
+
+test
+
+#^crumb_trap trim=ends same=append
+{crumb_slash}<a class="crumb" href="{_root}test">test</a>
+
+#^------------------------------
+#^body trim=ends
+
+<div class="gist_wrap mob">
+	{body_text}
+	{test1}
+
+</div>
+
+<div class="gist_wrap">
+	<script src="https://utteranc.es/client.js"
+			repo="notshi/notshi.github.io"
+			issue-term="url"
+			theme="github-light"
+			crossorigin="anonymous"
+			async>
+	</script>
+</div>
+
+#^body_text trim=ends form=markdown
+just some stuff for testing.
+
+#^test1 trim=ends form=markdown
+<iframe scrolling="no" src="https://d-portal.org/ctrack.html?country=AF&amp;#view=frame&amp;frame=stats&amp;size=960" style="width: 960px; height: 414px;" frameborder="0"></iframe>
